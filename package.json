@@ -1,0 +1,22 @@
+{
+  "name": "express_react",
+  "version": "1.0.0",
+  "description": "Boilerplate for React and Node(express)",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "cd node_react && npm install",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix node_react",
+    "dev": "concurrently \"npm run server\" \"npm run client"
+  },
+  "author": "q",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.1.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
